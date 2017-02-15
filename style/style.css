@@ -66,3 +66,105 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
+
+@font-face {
+  font-family: 'Roboto-regular';
+  src: url("../fonts/roboto_regular_macroman/Roboto-Regular-webfont.eot");
+  src: url("../fonts/roboto_regular_macroman/Roboto-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto_regular_macroman/Roboto-Regular-webfont.woff") format("woff"), url("../fonts/roboto_regular_macroman/Roboto-Regular-webfont.ttf") format("truetype"), url("../fonts/roboto_regular_macroman/Roboto-Regular-webfont.svg#robotoregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto-light';
+  src: url("../fonts/roboto_lightcondensed_macroman/RobotoCondensed-Light-webfont.eot");
+  src: url("../fonts/roboto_lightcondensed_macroman/RobotoCondensed-Light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto_lightcondensed_macroman/RobotoCondensed-Light-webfont.woff") format("woff"), url("../fonts/roboto_lightcondensed_macroman/RobotoCondensed-Light-webfont.ttf") format("truetype"), url("../fonts/roboto_lightcondensed_macroman/RobotoCondensed-Light-webfont.svg#roboto_condensedlight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 29, ../sass/style.scss */
+body {
+  font-family: 'Roboto-regular', 'Ariel', 'sans-serrif';
+  background: darkgray;
+}
+/* line 32, ../sass/style.scss */
+body header {
+  max-width: 1390px;
+  padding-top: 35px;
+  padding-right: 135px;
+  padding-left: 135px;
+  background: #f6f6f6;
+  margin-right: auto;
+  margin-left: auto;
+}
+/* line 41, ../sass/style.scss */
+body header .header-top {
+  height: 116px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 1200px) {
+  /* line 52, ../sass/style.scss */
+  header {
+    max-width: 900px;
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+}
+/* line 58, ../sass/style.scss */
+.main-menu {
+  font-size: 16px;
+  line-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  width: 700px;
+}
+/* line 64, ../sass/style.scss */
+.main-menu li {
+  padding-left: 10px;
+  padding-right: 10px;
+  text-transform: uppercase;
+  color: #000000;
+}
+/* line 70, ../sass/style.scss */
+.main-menu .active {
+  background: #ffea00;
+}
+/* line 73, ../sass/style.scss */
+.main-menu li:last-child {
+  padding-right: 0;
+  margin-left: 140px;
+}
+/* line 77, ../sass/style.scss */
+.main-menu li:hover {
+  background: #ffea00;
+}
+
+@media (min-width: 1200px) {
+  /* line 82, ../sass/style.scss */
+  .main-menu {
+    width: 600px;
+  }
+}
+/* line 86, ../sass/style.scss */
+#slider {
+  border-top: 1px solid transparent;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 20px;
+}
+
+/* line 92, ../sass/style.scss */
+.content {
+  background: blue;
+  max-width: 1660px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* line 98, ../sass/style.scss */
+#container {
+  padding-left: 20px;
+}
