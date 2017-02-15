@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Welcome to Compass.
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
@@ -149,14 +150,75 @@ body header .header-top {
   }
 }
 /* line 86, ../sass/style.scss */
-#slider {
-  border-top: 1px solid transparent;
-  padding-left: 15px;
-  padding-right: 15px;
-  height: 20px;
+.carousel {
+  max-width: 1080px;
+  /* ╤И╨╕╤А╨╕╨╜╨░ ╨▓╤Б╨╡╨│╨╛ ╨▒╨╗╨╛╨║╨░ */
+  margin: 50px auto;
+  width: 100%;
 }
 
 /* line 92, ../sass/style.scss */
+.carousel-wrapper {
+  margin: 10px 30px;
+  /* ╨╛╤В╤Б╤В╤Г╨┐╤Л ╨┤╨╗╤П ╤Б╤В╤А╨╡╨╗╨╛╨║ */
+  overflow: hidden;
+  /* ╤Б╨║╤А╤Л╨▓╨░╨╡╨╝ ╤Б╨╛╨┤╨╡╤А╨╢╨╕╨╝╨╛╨╡, ╨▓╤Л╤Е╨╛╨┤╤П╤Й╨╡╨╡ ╨╖╨░ ╤А╨░╨╝╨║╨╕ ╨╛╤Б╨╜╨╛╨▓╨╜╨╛╨╣ ╨╛╨▒╨╗╨░╤Б╤В╨╕ */
+  position: relative;
+}
+
+/* line 97, ../sass/style.scss */
+.carousel-items {
+  width: 10000px;
+  /* ╤Г╤Б╤В╨░╨╜╨░╨▓╨╗╨╕╨▓╨░╨╡╨╝ ╨▒╨╛╨╗╤М╤И╤Г╤О ╤И╨╕╤А╨╕╨╜╤Г ╨┤╨╗╤П ╨╜╨░╨▒╨╛╤А╨░ ╤Н╨╗╨╡╨╝╨╡╨╜╤В╨╛╨▓ */
+  position: relative;
+  /* ╨┐╨╛╨╖╨╕╤Ж╨╕╨╛╨╜╨╕╤А╤Г╨╡╨╝ ╨▒╨╗╨╛╨║ ╨╛╤В╨╜╨╛╤Б╨╕╤В╨╡╨╗╤М╨╜╨╛ ╨╛╤Б╨╜╨╛╨▓╨╜╨╛╨╣ ╨╛╨▒╨╗╨░╤Б╤В╨╕ ╨║╨░╤А╤Г╤Б╨╡╨╗╨╕ */
+}
+
+/* line 101, ../sass/style.scss */
+.carousel-block {
+  float: left;
+  /* ╨▓╤Л╤Б╤В╤А╨░╨╕╨▓╨░╨╡╨╝ ╨▓╤Б╨╡ ╤Н╨╗╨╡╨╝╨╡╨╜╤В╤Л ╨║╨░╤А╤Г╤Б╨╡╨╗╨╕ ╨▓ ╤А╤П╨┤ */
+  width: 250px;
+  /* ╨╖╨░╨┤╨░╤С╨╝ ╤И╨╕╤А╨╕╨╜╤Г ╨║╨░╨╢╨┤╨╛╨│╨╛ ╤Н╨╗╨╡╨╝╨╡╨╜╤В╨░ */
+  padding: 10px 10px 10px 0px;
+  /* ╨┤╨╡╨╗╨░╨╡╨╝ ╨╛╤Б╤В╤Г╨┐╤Л, ╤З╤В╨╛╨▒╤Л ╤Н╨╗╨╡╨╝╨╡╨╜╤В╤Л ╨╜╨╡ ╤Б╨╗╨╕╨▓╨░╨╗╨╕╤Б╤М */
+}
+
+/* line 106, ../sass/style.scss */
+.carousel-block img {
+  display: block;
+}
+
+/*********** BUTTONS ***********/
+/* line 111, ../sass/style.scss */
+.carousel-button-left a, .carousel-button-right a {
+  width: 25px;
+  height: 36px;
+  position: relative;
+  top: 80px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* line 119, ../sass/style.scss */
+.carousel-button-left a {
+  float: left;
+  background: url(../images/carousel-left.png);
+}
+
+/* line 123, ../sass/style.scss */
+.carousel-button-right a {
+  float: right;
+  background: url(../images/carousel-right.png);
+}
+
+/*********** SHADOW ***********/
+/* line 129, ../sass/style.scss */
+.shadow {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+}
+
+/* line 132, ../sass/style.scss */
 .content {
   background: blue;
   max-width: 1660px;
@@ -164,7 +226,7 @@ body header .header-top {
   margin-left: auto;
 }
 
-/* line 98, ../sass/style.scss */
+/* line 138, ../sass/style.scss */
 #container {
   padding-left: 20px;
 }
