@@ -4,6 +4,9 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+@import "_masonry.scss";
+@import "_bootstrap.scss";
+@import "_my-style.scss";
 @font-face {
     font-family: 'Roboto-regular';
     src: url('../fonts/roboto_regular_macroman/Roboto-Regular-webfont.eot');
@@ -39,11 +42,10 @@ body {
     margin-right: auto;
     margin-left: auto;
     .header-top {
-      height: 116px;
+      height: 130px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 40px;
 
     }
   }
@@ -83,52 +85,7 @@ body {
     width: 600px;
   }
 }
-.carousel {
 
-   max-width: 1080px; /* ширина всего блока */
-   margin: 50px auto;
-   width:100%;
-}
-.carousel-wrapper {
-   margin: 10px 30px; /* отступы для стрелок */
-   overflow: hidden; /* скрываем содержимое, выходящее за рамки основной области */
-   position:relative;
-}
-.carousel-items {
-   width: 10000px; /* устанавливаем большую ширину для набора элементов */
-   position: relative; /* позиционируем блок относительно основной области карусели */
-}
-.carousel-block {
-   float: left; /* выстраиваем все элементы карусели в ряд */
-   width: 250px; /* задаём ширину каждого элемента */
-   padding: 10px 10px 10px 0px; /* делаем оступы, чтобы элементы не сливались */
-}
-.carousel-block img{
-	display:block;
-}
-
-/*********** BUTTONS ***********/
-.carousel-button-left a, .carousel-button-right a{
-   width: 25px;
-   height: 36px;
-   position: relative;
-   top: 80px;
-   cursor: pointer;
-   text-decoration:none;
-}
-.carousel-button-left a{
-   float: left;
-   background: url(../images/carousel-left.png);
-}
-.carousel-button-right a{
-   float: right;
-   background: url(../images/carousel-right.png);
-}
-
-/*********** SHADOW ***********/
-.shadow{
-	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
-}
 .content {
   background: blue;
   max-width: 1660px;
@@ -136,5 +93,54 @@ body {
   margin-left: auto;
 }
 #container {
-  padding-left: 20px;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+.carousel.slide {
+  max-width: 1633px;
+  max-height: 700px;
+  background-image: url(../images/content/slider-bg.jpg);
+}
+.carousel-caption {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 45%;
+}
+.main-caption {
+  text-align: left;
+}
+.main-caption  div {
+    display: inline-flex;
+    background: #ffea00;
+    color: #000000;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 70px;
+}
+@media (max-width: 1300px) {
+  .main-caption div {
+    font-size: 50px;
+    line-height: 45px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+.just-caption {
+  text-align: left;
+}
+.just-caption  div {
+    display: inline-flex;
+    background: #414146;
+    color: #ffffff;
+    margin-bottom: 2px;
+    padding-left: 2px;
+    padding-right: 2px;
+    text-transform: uppercase;
+    font-size: 70px;
+}
+@media (max-width: 1300px) {
+  .just-caption div {
+    font-size: 20px;
+  }
 }
