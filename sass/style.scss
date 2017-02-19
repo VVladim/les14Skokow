@@ -7,6 +7,9 @@
 @import "_masonry.scss";
 @import "_bootstrap.scss";
 @import "_my-style.scss";
+@import "_button.scss";
+@import "_quality";
+
 @font-face {
     font-family: 'Roboto-regular';
     src: url('../fonts/roboto_regular_macroman/Roboto-Regular-webfont.eot');
@@ -32,17 +35,19 @@
 body {
   font-family: 'Roboto-regular', 'Ariel', 'sans-serrif';
   background: darkgray;
-  header {
-    max-width: 1390px;
-    // height: 100vh;
-    padding-top: 35px;
-    padding-right: 135px;
-    padding-left: 135px;
-    background: #f6f6f6;
+  .site-wrapp {
+    max-width: 1660px;
     margin-right: auto;
     margin-left: auto;
+
+  }
+  header {
+    padding-top: 35px;
+    background: #f6f6f6;
     .header-top {
       height: 130px;
+      padding-right: 135px;
+      padding-left: 135px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -50,11 +55,10 @@ body {
     }
   }
 }
-@media (min-width: 1200px) {
-  header {
-    max-width: 900px;
-    padding-right: 100px;
-    padding-left: 100px;
+
+@media (width: 1300px) {
+  .site-wrapp {
+    width: 1260px;
   }
 }
 .main-menu {
@@ -96,16 +100,35 @@ body {
   padding-left: 2%;
   padding-right: 2%;
 }
-.carousel.slide {
-  max-width: 1633px;
+.carousel {
+  background: #ffffff;
+}
+.carousel-inner {
+  position: relative;
+  max-width: 1613px;
+  padding-left: 10px;
+  padding-right: 10px;
   max-height: 700px;
   background-image: url(../images/content/slider-bg.jpg);
+  .item.active {
+    position: relative;
+  }
+}
+@media (max-width: 1300px) {
+  .main-caption div {
+    font-size: 50px;
+    line-height: 45px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 }
 .carousel-caption {
   display: inline-flex;
   flex-direction: column;
   justify-content: flex-start;
   width: 45%;
+  bottom: 22%;
+  left: 13%;
 }
 .main-caption {
   text-align: left;

@@ -9641,22 +9641,23 @@ button.close {
   height: 25px;
   width: 25px;
   border-radius: 0;
+  background: #414146;
+  border: 3px solid #414146;
 }
 
-/* line 6, ../sass/_my-style.scss */
+/* line 9, ../sass/_my-style.scss */
 .carousel-indicators .active {
+  background-color: #ffea00;
   height: 25px;
   width: 25px;
-  margin: 0;
-  background-color: #fff;
 }
 
-/* line 12, ../sass/_my-style.scss */
-.carousel-control {
-  font-size: 10px;
+/* line 14, ../sass/_my-style.scss */
+.right.carousel-control {
+  right: 1%;
 }
 
-/* line 15, ../sass/_my-style.scss */
+/* line 17, ../sass/_my-style.scss */
 body .fa {
   color: #ffffff;
   font-size: 70px;
@@ -9664,24 +9665,95 @@ body .fa {
   line-height: 140px;
 }
 
-/* line 21, ../sass/_my-style.scss */
+/* line 23, ../sass/_my-style.scss */
 .left.carousel-control {
   background: #000000;
   height: 140px;
   width: 50px;
   top: 40%;
-  left: 6%;
+  left: 1%;
   text-align: center;
 }
 
-/* line 29, ../sass/_my-style.scss */
+/* line 31, ../sass/_my-style.scss */
 .right.carousel-control {
   background: #000000;
   height: 140px;
   width: 50px;
   top: 40%;
-  right: 6%;
+  right: 1%;
   text-align: center;
+}
+
+/* line 1, ../sass/_button.scss */
+button {
+  padding: 8px 25px;
+  background: #424147;
+  color: #ffea00;
+  border: none;
+  font-size: 18px;
+}
+
+/* line 8, ../sass/_button.scss */
+button.active {
+  color: #ffffff;
+  border: none;
+  border-bottom: 3px solid  #ffea00;
+  background: #000000;
+}
+
+/* line 14, ../sass/_button.scss */
+.booked {
+  margin-top: 7%;
+  margin-left: 35%;
+  font-size: 24px;
+}
+
+@media (max-width: 1300px) {
+  /* line 20, ../sass/_button.scss */
+  .booked {
+    padding: 5px 20px;
+    font-size: 18px;
+  }
+}
+/* line 25, ../sass/_button.scss */
+button:hover {
+  background: #ffea00;
+  color: #000000;
+  border-bottom: 3px solid  #000000;
+}
+
+/* line 31, ../sass/_button.scss */
+button:active {
+  background: #000000;
+  color: #ffffff;
+  border-bottom: 3px solid  #ffea00;
+}
+
+/* line 1, ../sass/_quality.scss */
+.quality {
+  background: #e1e4e9;
+  border-bottom: 2px solid #cacaca;
+  padding-top: 100px;
+  padding-left: 250px;
+  padding-bottom: 250px;
+}
+/* line 7, ../sass/_quality.scss */
+.quality h1 {
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: #424147;
+  font-size: 35px;
+  padding-bottom: 25px;
+}
+/* line 15, ../sass/_quality.scss */
+.quality p {
+  text-align: center;
+  text-transform: uppercase;
+  color: #424147;
+  font-size: 24px;
+  padding-bottom: 65px;
 }
 
 @font-face {
@@ -9698,38 +9770,39 @@ body .fa {
   font-weight: normal;
   font-style: normal;
 }
-/* line 32, ../sass/style.scss */
+/* line 35, ../sass/style.scss */
 body {
   font-family: 'Roboto-regular', 'Ariel', 'sans-serrif';
   background: darkgray;
 }
-/* line 35, ../sass/style.scss */
-body header {
-  max-width: 1390px;
-  padding-top: 35px;
-  padding-right: 135px;
-  padding-left: 135px;
-  background: #f6f6f6;
+/* line 38, ../sass/style.scss */
+body .site-wrapp {
+  max-width: 1660px;
   margin-right: auto;
   margin-left: auto;
 }
 /* line 44, ../sass/style.scss */
+body header {
+  padding-top: 35px;
+  background: #f6f6f6;
+}
+/* line 47, ../sass/style.scss */
 body header .header-top {
   height: 130px;
+  padding-right: 135px;
+  padding-left: 135px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-@media (min-width: 1200px) {
-  /* line 54, ../sass/style.scss */
-  header {
-    max-width: 900px;
-    padding-right: 100px;
-    padding-left: 100px;
+@media (width: 1300px) {
+  /* line 60, ../sass/style.scss */
+  .site-wrapp {
+    width: 1260px;
   }
 }
-/* line 60, ../sass/style.scss */
+/* line 64, ../sass/style.scss */
 .main-menu {
   font-size: 16px;
   line-height: 70px;
@@ -9737,34 +9810,34 @@ body header .header-top {
   justify-content: space-between;
   width: 700px;
 }
-/* line 66, ../sass/style.scss */
+/* line 70, ../sass/style.scss */
 .main-menu li {
   padding-left: 10px;
   padding-right: 10px;
   text-transform: uppercase;
   color: #000000;
 }
-/* line 72, ../sass/style.scss */
+/* line 76, ../sass/style.scss */
 .main-menu .active {
   background: #ffea00;
 }
-/* line 75, ../sass/style.scss */
+/* line 79, ../sass/style.scss */
 .main-menu li:last-child {
   padding-right: 0;
   margin-left: 140px;
 }
-/* line 79, ../sass/style.scss */
+/* line 83, ../sass/style.scss */
 .main-menu li:hover {
   background: #ffea00;
 }
 
 @media (min-width: 1200px) {
-  /* line 84, ../sass/style.scss */
+  /* line 88, ../sass/style.scss */
   .main-menu {
     width: 600px;
   }
 }
-/* line 89, ../sass/style.scss */
+/* line 93, ../sass/style.scss */
 .content {
   background: blue;
   max-width: 1660px;
@@ -9772,33 +9845,56 @@ body header .header-top {
   margin-left: auto;
 }
 
-/* line 95, ../sass/style.scss */
+/* line 99, ../sass/style.scss */
 #container {
   padding-left: 2%;
   padding-right: 2%;
 }
 
-/* line 99, ../sass/style.scss */
-.carousel.slide {
-  max-width: 1633px;
+/* line 103, ../sass/style.scss */
+.carousel {
+  background: #ffffff;
+}
+
+/* line 106, ../sass/style.scss */
+.carousel-inner {
+  position: relative;
+  max-width: 1613px;
+  padding-left: 10px;
+  padding-right: 10px;
   max-height: 700px;
   background-image: url(../images/content/slider-bg.jpg);
 }
+/* line 113, ../sass/style.scss */
+.carousel-inner .item.active {
+  position: relative;
+}
 
-/* line 104, ../sass/style.scss */
+@media (max-width: 1300px) {
+  /* line 118, ../sass/style.scss */
+  .main-caption div {
+    font-size: 50px;
+    line-height: 45px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+/* line 125, ../sass/style.scss */
 .carousel-caption {
   display: inline-flex;
   flex-direction: column;
   justify-content: flex-start;
   width: 45%;
+  bottom: 22%;
+  left: 13%;
 }
 
-/* line 110, ../sass/style.scss */
+/* line 133, ../sass/style.scss */
 .main-caption {
   text-align: left;
 }
 
-/* line 113, ../sass/style.scss */
+/* line 136, ../sass/style.scss */
 .main-caption div {
   display: inline-flex;
   background: #ffea00;
@@ -9809,7 +9905,7 @@ body header .header-top {
 }
 
 @media (max-width: 1300px) {
-  /* line 122, ../sass/style.scss */
+  /* line 145, ../sass/style.scss */
   .main-caption div {
     font-size: 50px;
     line-height: 45px;
@@ -9817,12 +9913,12 @@ body header .header-top {
     padding-right: 5px;
   }
 }
-/* line 129, ../sass/style.scss */
+/* line 152, ../sass/style.scss */
 .just-caption {
   text-align: left;
 }
 
-/* line 132, ../sass/style.scss */
+/* line 155, ../sass/style.scss */
 .just-caption div {
   display: inline-flex;
   background: #414146;
@@ -9835,7 +9931,7 @@ body header .header-top {
 }
 
 @media (max-width: 1300px) {
-  /* line 143, ../sass/style.scss */
+  /* line 166, ../sass/style.scss */
   .just-caption div {
     font-size: 20px;
   }
