@@ -4,6 +4,7 @@ button {
   color: #ffea00;
   border: none;
   font-size: 18px;
+  border-bottom: 3px solid  transparent;
 }
 button.active {
   color: #ffffff;
@@ -33,4 +34,12 @@ button:active {
   color: #ffffff;
   border-bottom: 3px solid  #ffea00;
 
+}
+.content-button {
+  text-transform: uppercase;
+  margin-left: 50%;
+   transform: translate(-50%, -50%);
+   padding: 8px 35px;
+   z-index: 2;
+   position: relative;
 }

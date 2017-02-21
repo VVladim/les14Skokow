@@ -3,6 +3,6 @@
 var container = document.querySelector('#container');
 var msnry = new Masonry( container, {
   // Настройки
-  columnWidth: 7,
+  columnWidth: 8,
   itemSelector: '.item'
 });

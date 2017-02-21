@@ -1,6 +1,31 @@
+
+ .mansory-card {
+   background: #f6f6f6;
+   position: relative;
+   padding-left: 2%;
+    padding-right: 2%;
+   &::after {
+      content: '';
+      position: absolute; /* Абсолютное позиционирование */
+      width: 94%;
+      height: 2px;
+      top: 0;
+      margin-left: 50%;
+      transform: translate(-52%, 0);
+      background: #cacaca;
+      z-index: 1;
+   }
+   p{
+      font-size: 16px;
+      color: #414146;
+      text-align: center;
+      padding-top: 20px;
+      padding-bottom: 50px;
+
+   }
+ }
  .content .item {
 	width: 31%;
-	// padding: 2px;
  }
 .item.w2 {
 	width: 15%;

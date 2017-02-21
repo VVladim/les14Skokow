@@ -4,11 +4,12 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
-@import "_masonry.scss";
-@import "_bootstrap.scss";
-@import "_my-style.scss";
-@import "_button.scss";
-@import "_quality";
+@import "masonry.scss";
+@import "my-style.scss";
+@import "button.scss";
+@import "quality";
+
+
 
 @font-face {
     font-family: 'Roboto-regular';
@@ -17,7 +18,7 @@
          url('../fonts/roboto_regular_macroman/Roboto-Regular-webfont.woff') format('woff'),
          url('../fonts/roboto_regular_macroman/Roboto-Regular-webfont.ttf') format('truetype'),
          url('../fonts/roboto_regular_macroman/Roboto-Regular-webfont.svg#robotoregular') format('svg');
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
 
 }
@@ -28,18 +29,18 @@
          url('../fonts/roboto_lightcondensed_macroman/RobotoCondensed-Light-webfont.woff') format('woff'),
          url('../fonts/roboto_lightcondensed_macroman/RobotoCondensed-Light-webfont.ttf') format('truetype'),
          url('../fonts/roboto_lightcondensed_macroman/RobotoCondensed-Light-webfont.svg#roboto_condensedlight') format('svg');
-    font-weight: normal;
+    font-weight: 300;
     font-style: normal;
 
 }
 body {
-  font-family: 'Roboto-regular', 'Ariel', 'sans-serrif';
+  font-family: 'Roboto-regular';
   background: darkgray;
   .site-wrapp {
     max-width: 1660px;
     margin-right: auto;
     margin-left: auto;
-
+    padding: 0;
   }
   header {
     padding-top: 35px;
@@ -51,7 +52,6 @@ body {
       display: flex;
       justify-content: space-between;
       align-items: center;
-
     }
   }
 }
@@ -71,7 +71,7 @@ body {
     padding-left: 10px;
     padding-right: 10px;
     text-transform: uppercase;
-    color: #000000;
+    color: #000;
   }
   .active {
      background: #ffea00;
@@ -90,12 +90,12 @@ body {
   }
 }
 
-.content {
-  background: blue;
-  max-width: 1660px;
-  margin-right: auto;
-  margin-left: auto;
-}
+// .content {
+//   background: blue;
+//   max-width: 1660px;
+//   margin-right: auto;
+//   margin-left: auto;
+// }
 #container {
   padding-left: 2%;
   padding-right: 2%;
@@ -136,7 +136,7 @@ body {
 .main-caption  div {
     display: inline-flex;
     background: #ffea00;
-    color: #000000;
+    color: #000;
     margin-bottom: 10px;
     text-transform: uppercase;
     font-size: 70px;
